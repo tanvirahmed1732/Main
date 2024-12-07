@@ -1,40 +1,41 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample Form</title>
+    <title>Form</title>
 </head>
 <body>
-    <h2>Sample Form</h2>
-    <form action="#" method="POST">
-        <!-- Text input field 1 (mandatory) -->
-        <label for="name">Name (Required):</label>
-        <input type="text" id="name" name="name" required><br><br>
+    <h2>Simple Form</h2>
+    <form>
+        
+        <label for="name">Name:</label>
+        <input type="text" name="name" required>
+        <br>
 
-        <!-- Text input field 2 (mandatory) -->
-        <label for="email">Email (Required):</label>
-        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" name="email" required>
+        <br>
 
-        <!-- Text input field 3 (hidden) -->
-        <input type="hidden" id="userID" name="userID" value="12345"><br><br>
+        <!-- hidden -->
+        <input type="hidden">
+        <br>
 
-        <!-- Radio button group -->
         <label>Gender:</label>
-        <input type="radio" id="male" name="gender" value="male">
+        <input type="radio" name="gender" value="male">
         <label for="male">Male</label>
-        <input type="radio" id="female" name="gender" value="female">
-        <label for="female">Female</label><br><br>
+        <input type="radio" name="gender" value="female">
+        <label for="female">Female</label>
+        <br>
 
-        <!-- Select box -->
-        <label for="course">Choose a course:</label>
-        <select id="course" name="course">
+        <label for="course">Choose your course:</label>
+        <select name="course">
             <option value="math">Math</option>
             <option value="science">Science</option>
             <option value="history">History</option>
-        </select><br><br>
+        </select>
+        <br>
 
-        <!-- Submit button -->
         <input type="submit" value="Submit">
     </form>
 </body>
